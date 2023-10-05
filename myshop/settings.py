@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/env
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+# settings.py
 
 from pathlib import Path
 
@@ -184,6 +185,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = False
+# CORS_ALLOWED_ORIGINS = [
+#     'https://thunderous-snickerdoodle-7aec4d.netlify.app',
+# ]
+
 
 # Email settings for all transactional emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
